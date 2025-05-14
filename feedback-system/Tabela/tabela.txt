@@ -1,0 +1,7 @@
+CREATE TABLE feedbacks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo TEXT NOT NULL,
+    descricao TEXT NOT NULL,
+    tipo ENUM('bug', 'sugestão', 'reclamação', 'feedback') NOT NULL,
+    status ENUM('recebido', 'em análise', 'em desenvolvimento', 'finalizado') DEFAULT 'recebido'
+);
